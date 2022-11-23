@@ -1,0 +1,32 @@
+﻿<Window x:Class="MyTraining.ExercisesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyTraining"
+        mc:Ignorable="d"
+        Title="ExercisesWindow" Height="720" Width="1280">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Background="#FFFF872F">
+            <TextBlock Height="60" Width="400" Text="Моя Тренировка" FontSize="36" FontWeight="Bold" FontFamily="Tempus Sans ITC" LineHeight="6" TextAlignment="Center" Foreground="#FFFFE0E0">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="2"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <Button Height="100"></Button>
+            <Button Height="100"></Button>
+            <Button Height="100"></Button>
+            <Button Height="100"></Button>
+            <Button Height="100"></Button>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

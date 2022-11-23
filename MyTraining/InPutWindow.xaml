@@ -113,7 +113,7 @@
                 Background="#FFFF6C00"
                 Content="Вход"
                 Foreground="White"
-                Cursor="Hand"
+                Cursor="Hand" Click="Button_Click"
                 ></Button>
             </StackPanel>
 

@@ -135,7 +135,7 @@
                 <Button                
                 Height="40"
                 Background="#FFFF6C00"
-                Content="Вход"
+                Content="Регистрация"
                 Foreground="White"
                 Cursor="Hand"
                 ></Button>

@@ -30,5 +30,14 @@ namespace MyTraining
             NavigationService.Navigate(new RegWindow()); 
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Close();
+            ExercisesWindow exercisesWindow = new ExercisesWindow();
+            exercisesWindow.Show();
+
+        }
     }
 }
