@@ -19,12 +19,15 @@
                     <DropShadowEffect BlurRadius="2"/>
                 </TextBlock.Effect>
             </TextBlock>
-            <Button Height="100"></Button>
-            <Button Height="100"></Button>
-            <Button Height="100"></Button>
-            <Button Height="100"></Button>
-            <Button Height="100"></Button>
+            <Button Height="110" Background="#FFFF872F"></Button>
+            <Button Height="110" Background="#FFFF872F"></Button>
+            <Button Height="110" Background="#FFFF872F"></Button>
+            <Button Height="110" Background="#FFFF872F"></Button>
+            <Button Height="110" Background="#FFFF872F"></Button>
+            <Border Height="80"></Border>
         </StackPanel>
+
+        <StackPanel Grid.Column="1" Height="60" VerticalAlignment="Top" Background="#FFFF872F"></StackPanel>
 
 
 
