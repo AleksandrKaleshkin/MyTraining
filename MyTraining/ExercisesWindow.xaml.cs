@@ -23,5 +23,10 @@ namespace MyTraining
         {
             InitializeComponent();
         }
+
+        private void Exercises_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new ExercisesPage();
+        }
     }
 }

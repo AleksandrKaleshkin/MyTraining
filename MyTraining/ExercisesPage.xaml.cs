@@ -16,28 +16,13 @@ using System.Windows.Shapes;
 namespace MyTraining
 {
     /// <summary>
-    /// Логика взаимодействия для InPutWindow.xaml
+    /// Логика взаимодействия для ExercisesPage.xaml
     /// </summary>
-    public partial class InPutWindow : Page
+    public partial class ExercisesPage : Page
     {
-        public InPutWindow()
+        public ExercisesPage()
         {
             InitializeComponent();
-        }
-
-        private void Reg_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new RegWindow()); 
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-
-            ExercisesWindow exercisesWindow = new ExercisesWindow();
-            exercisesWindow.ShowDialog();
-
         }
     }
 }

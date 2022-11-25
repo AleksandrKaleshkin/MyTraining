@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyTraining"
         mc:Ignorable="d"
-        Title="Моя тренировка"  Height="450" Width="800" Icon="Icon/training.png" Background="DarkSalmon" ResizeMode="NoResize">
-    <Frame Name="MainFrame" Background="DarkCyan" NavigationUIVisibility="Hidden" />
+        Title="Моя тренировка"  Height="450" Width="800" Icon="Icon/training.png" Background="DarkSalmon" ResizeMode="NoResize"
+        x:Name="LoginWindow">
+    <Frame Name="MainFrame"  NavigationUIVisibility="Hidden" />
 
 </Window>

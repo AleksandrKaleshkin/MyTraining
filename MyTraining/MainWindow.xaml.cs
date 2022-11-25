@@ -25,6 +25,7 @@ namespace MyTraining
             InitializeComponent();
             MainFrame.Content = new InPutWindow();
 
+
         }
 
 
