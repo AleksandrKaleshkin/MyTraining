@@ -50,6 +50,7 @@
                 </TextBlock>
 
                 <Border Height="50"
+                    x:Name="BorderEmail"
                     BorderBrush="Silver"
                     BorderThickness="2"
                     CornerRadius="4">
@@ -64,6 +65,7 @@
 
                         <!--Емаил текстбок-->
                         <TextBox
+                        x:Name="EmailBox"
                         BorderThickness="0"
                         Foreground="Silver"
                         Grid.Column="1"
@@ -76,6 +78,7 @@
 
 
                 <Border Height="50"
+                    x:Name="BorderPassword"
                     BorderBrush="Silver"
                     BorderThickness="2"
                     CornerRadius="4"
@@ -92,6 +95,7 @@
 
                         <!--Емаил текстбок-->
                         <PasswordBox
+                        x:Name="PasswordBox"
                         BorderThickness="0"
                         Foreground="Silver"
                         Grid.Column="1"
@@ -102,6 +106,7 @@
                     </Grid>
                 </Border>
                 <Border Height="50"
+                    x:Name="BorderRePassword"
                     BorderBrush="Silver"
                     BorderThickness="2"
                     CornerRadius="4"
@@ -118,6 +123,7 @@
 
                         <!--Емаил текстбок-->
                         <PasswordBox
+                        x:Name="RePasswordBox"
                         BorderThickness="0"
                         Foreground="Silver"
                         Grid.Column="1"
@@ -132,7 +138,8 @@
 
                 <!--Кнопка входа-->
 
-                <Button                
+                <Button  
+                Click="Registration_click"
                 Height="40"
                 Background="#FFFF6C00"
                 Content="Регистрация"

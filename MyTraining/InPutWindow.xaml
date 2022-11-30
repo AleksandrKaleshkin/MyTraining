@@ -51,6 +51,7 @@
                 </TextBlock>
 
                 <Border Height="50"
+                        x:Name="BorderEmail"
                     BorderBrush="Silver"
                     BorderThickness="2"
                     CornerRadius="4">
@@ -65,6 +66,7 @@
 
                         <!--Емаил текстбок-->
                         <TextBox
+                        x:Name="email"
                         BorderThickness="0"
                         Foreground="Silver"
                         Grid.Column="1"
@@ -77,6 +79,7 @@
 
 
                 <Border Height="50"
+                        x:Name="BorderPassword"
                     BorderBrush="Silver"
                     BorderThickness="2"
                     CornerRadius="4"
@@ -93,6 +96,7 @@
 
                         <!--Емаил текстбок-->
                         <PasswordBox
+                        x:Name="password"
                         BorderThickness="0"
                         Foreground="Silver"
                         Grid.Column="1"
