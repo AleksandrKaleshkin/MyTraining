@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyTrainingLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace MyTraining
 {
@@ -34,44 +36,89 @@ namespace MyTraining
 
         private void Registration_click(object sender, RoutedEventArgs e)
         {
-            string email = EmailBox.Text;
-            string password = PasswordBox.Password;
+            Person person = new Person
+            {
+                Email = EmailBox.Text,
+                Password = PasswordBox.Password
+            };
+
             string rePassword = RePasswordBox.Password;
 
-            if (email.Length < 5 || !email.Contains("@") || !email.Contains("."))
-            {
-                EmailBox.ToolTip = "Некорректное эл. почта";
-                BorderEmail.Background = Brushes.Red;
-                EmailBox.Background = Brushes.Red;
-            }
-            if (password!=rePassword)
-            {
-                RePasswordBox.ToolTip = "Неодинаковые пароли!";
-                RePasswordBox.Background = Brushes.Red;
-                BorderRePassword.Background = Brushes.Red;
-                PasswordBox.ToolTip = "Неодинаковые пароли!";
-                PasswordBox.Background = Brushes.Red;
-                BorderPassword.Background = Brushes.Red;
-            }
-            if (password.Length < 5)
-            {
+            bool emailcheck = person.Email.Length < 7 || !person.Email.Contains("@") || !person.Email.Contains(".");
+            bool passRepasscheck = person.Password != rePassword;
+            bool passcheck = person.Password.Length < 5;
+            bool repasscheck = rePassword.Length < 5;
 
-                PasswordBox.ToolTip = "Некорректный пароль!";
-                PasswordBox.Background = Brushes.Red;
-                BorderPassword.Background = Brushes.Red;
-            }
+                if (emailcheck)
+                {
+                    CheckEmail(EmailBox, BorderEmail);
+                    emailcheck = true;
+                    
+                }
 
-            if (rePassword.Length < 5)
-            {
-                RePasswordBox.ToolTip = "Некорректный пароль!";
-                RePasswordBox.Background = Brushes.Red;
-                BorderRePassword.Background = Brushes.Red;
-            }
-            else
-            {
+                if (passRepasscheck)
+                {
+                    CheckPassword(PasswordBox, BorderPassword, RePasswordBox, BorderRePassword);
+                    passRepasscheck = true;
+                   
+                }
+
+                if (passcheck)
+                {
+                    CheckPassword(PasswordBox, BorderPassword);
+                    passcheck = true;
+                    
+                }
+
+                if (repasscheck)
+                {
+                    CheckPassword(RePasswordBox, BorderRePassword);
+                    repasscheck = true;                    
+                }
+
+                if (emailcheck==false && passRepasscheck==false && passcheck == false && repasscheck == false)
+                {
+
                 NavigationService.Navigate(new InPutWindow());
             }
 
+
+
+
+
+
+
+
+
         }
+
+        private void CheckEmail(TextBox emailBox, Border emailBorder)
+        {
+            emailBox.ToolTip = "Некорректное эл. почта";
+            emailBorder.Background = Brushes.Red;
+            emailBox.Background = Brushes.Red;
+        }
+
+
+        private void CheckPassword(PasswordBox passwordBox, Border borderPassword, PasswordBox rePasswordBox, Border borderRePassword)
+        {
+                rePasswordBox.ToolTip = "Неодинаковые пароли!";
+                rePasswordBox.Background = Brushes.Red;
+                borderRePassword.Background = Brushes.Red;
+                passwordBox.ToolTip = "Неодинаковые пароли!";
+                passwordBox.Background = Brushes.Red;
+                borderPassword.Background = Brushes.Red;
+        }
+
+        private void CheckPassword(PasswordBox passwordBox, Border borderPassword)
+        {
+                passwordBox.ToolTip = "Некорректный пароль!";
+                passwordBox.Background = Brushes.Red;
+                borderPassword.Background = Brushes.Red;
+        }
+
+
     }
+
+    
 }
