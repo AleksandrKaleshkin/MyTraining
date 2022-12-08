@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:MyTraining"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="InPutWindow">
+      Title="InPutWindow"
+      x:Name="InPutPage">
 
     <Page.Resources>
         <ResourceDictionary>
@@ -39,7 +40,7 @@
                     <Ellipse.Fill>
                         <ImageBrush
                         Stretch="UniformToFill"
-                        ImageSource="Icon/training.png"></ImageBrush>
+                        ImageSource="/Icon/training.png"></ImageBrush>
                     </Ellipse.Fill>
 
                 </Ellipse>
@@ -62,7 +63,7 @@
                         </Grid.ColumnDefinitions>
 
                         <!--Иконка-->
-                        <Image Width="25" Height="25" Source="Icon/email.png"></Image>
+                        <Image Width="25" Height="25" Source="/Icon/email.png"></Image>
 
                         <!--Емаил текстбок-->
                         <TextBox
@@ -92,7 +93,7 @@
                         </Grid.ColumnDefinitions>
 
                         <!--Иконка-->
-                        <Image Width="25" Height="25" Source="Icon/password.png"></Image>
+                        <Image Width="25" Height="25" Source="/Icon/password.png"></Image>
 
                         <!--Емаил текстбок-->
                         <PasswordBox

@@ -23,11 +23,16 @@ namespace MyTraining
         public InPutWindow()
         {
             InitializeComponent();
+
+ 
+            
         }
+
 
         private void Reg_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new RegWindow()); 
+
 
         }
 
@@ -65,8 +70,11 @@ namespace MyTraining
 
           
                 MessageBox.Show(Email, Password);
+                
+
                 ExercisesWindow exercisesWindow = new ExercisesWindow();
                 exercisesWindow.ShowDialog();
+                
             }
 
 

@@ -55,16 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ExercisesPage.xaml.cs">
+    <Compile Include="Views\MainWindows\ExercisesPage.xaml.cs">
       <DependentUpon>ExercisesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExercisesWindow.xaml.cs">
       <DependentUpon>ExercisesWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegWindow.xaml.cs">
+    <Compile Include="Views\MainWindows\NotepadPage.xaml.cs">
+      <DependentUpon>NotepadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LogInWindows\RegWindow.xaml.cs">
       <DependentUpon>RegWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="ExercisesPage.xaml">
+    <Compile Include="Views\MainWindows\WeightPage.xaml.cs">
+      <DependentUpon>WeightPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindows\WorkoutPage.xaml.cs">
+      <DependentUpon>WorkoutPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\MainWindows\ExercisesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -72,7 +81,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="InPutWindow.xaml">
+    <Page Include="Views\LogInWindows\InPutWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -84,14 +93,26 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="InPutWindow.xaml.cs">
+    <Compile Include="Views\LogInWindows\InPutWindow.xaml.cs">
       <DependentUpon>InPutWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RegWindow.xaml">
+    <Page Include="Views\MainWindows\NotepadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LogInWindows\RegWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindows\WeightPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindows\WorkoutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,13 +152,33 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\1.jpg" />
-    <Resource Include="Icon\2.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyTraininhLib\MyTrainingLib.csproj">
       <Project>{d3f119c8-a91a-4067-a085-91e079406a8e}</Project>
       <Name>MyTrainingLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\muscles\breast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\MainIcon\exercises.png" />
+    <Resource Include="Icon\MainIcon\notepad.png" />
+    <Resource Include="Icon\MainIcon\profile.png" />
+    <Resource Include="Icon\MainIcon\settings.png" />
+    <Resource Include="Icon\MainIcon\weight.png" />
+    <Resource Include="Icon\MainIcon\workout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\muscles\back.png" />
+    <Resource Include="Icon\muscles\bitceps.png" />
+    <Resource Include="Icon\muscles\forearm.png" />
+    <Resource Include="Icon\muscles\legs.png" />
+    <Resource Include="Icon\muscles\press.png" />
+    <Resource Include="Icon\muscles\shin.png" />
+    <Resource Include="Icon\muscles\shoulders.png" />
+    <Resource Include="Icon\muscles\triceps.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

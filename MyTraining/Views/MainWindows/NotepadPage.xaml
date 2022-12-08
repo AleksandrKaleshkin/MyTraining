@@ -1,0 +1,77 @@
+﻿<Page x:Class="MyTraining.NotepadPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyTraining"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1280"
+      Title="NotepadPage">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Background="#FFFF872F">
+            <TextBlock Height="60" Width="350" Text="Моя Тренировка" FontSize="36" FontWeight="Bold"
+                       FontFamily="Tempus Sans ITC"  TextAlignment="Center"
+                       Foreground="#FFFFE0E0" >
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="2"/>
+                </TextBlock.Effect>
+            </TextBlock>
+
+
+
+
+            <Button Height="110" Background="#FFFF872F" BorderThickness="0" >
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Icon/MainIcon/exercises.png" Width="90"  ></Image>
+                    <TextBlock  FontSize="36" FontWeight="Bold" FontFamily="Comic Relief" TextAlignment="Center" Margin="10 20 0 0">Упражнения</TextBlock>
+                </StackPanel>
+            </Button>
+
+
+            <Button Height="110" Background="#FFFF872F" BorderThickness="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Icon/MainIcon/workout.png" Width="90"  ></Image>
+                    <TextBlock  FontSize="36" FontWeight="Bold" FontFamily="Comic Relief" TextAlignment="Center" Margin="10 20 0 0">Тренировки</TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Height="110" Background="#FFEA6300" BorderThickness="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Icon/MainIcon/notepad.png" Width="90"  ></Image>
+                    <TextBlock  FontSize="36" FontWeight="Bold" FontFamily="Comic Relief" TextAlignment="Center" Margin="10 20 0 0">Блокнот</TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Height="110" Background="#FFFF872F" BorderThickness="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Icon/MainIcon/weight.png" Width="90"  ></Image>
+                    <TextBlock  FontSize="36" FontWeight="Bold" FontFamily="Comic Relief" TextAlignment="Center" Margin="10 20 0 0">Вес/калории</TextBlock>
+                </StackPanel>
+            </Button>
+
+            <StackPanel Height="90" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Background="#FFFF872F" BorderThickness="0" Margin="0 0 0 5">
+                    <Image Source="/Icon/MainIcon/profile.png" ></Image>
+                </Button>
+                <Button Background="#FFFF872F" BorderThickness="0" Margin="0 0 0 5">
+                    <Image Source="/Icon/MainIcon/settings.png"></Image>
+                </Button>
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Height="599" VerticalAlignment="Top" ></StackPanel>
+        <StackPanel Grid.Column="1" Height="60" VerticalAlignment="Top" Background="#FFFF872F"></StackPanel>
+
+
+
+        <Frame x:Name="MainFrame"></Frame>
+    </Grid>
+</Page>

@@ -5,53 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyTraining"
         mc:Ignorable="d"
-        Foreground="AliceBlue"
-         Height="620" Width="1080"
+        Height="630" Width="1080"
+        MinHeight="630" MinWidth="1080"
+        MaxHeight="630" MaxWidth="1080"
+        
+        WindowStartupLocation="CenterScreen"
         Icon="Icon/training.png">
+
+
 
     <Grid>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <StackPanel Grid.Row="0" Grid.Column="0" Background="#FFFF872F">
-            <TextBlock Height="60" Width="400" Text="Моя Тренировка" FontSize="36" FontWeight="Bold"
-                       FontFamily="Tempus Sans ITC"  TextAlignment="Center"
-                       Foreground="#FFFFE0E0" >
-                <TextBlock.Effect>
-                    <DropShadowEffect BlurRadius="2"/>
-                </TextBlock.Effect>
-            </TextBlock>
-
-
-                <Button Height="110" Background="#FFFF872F" Click="Exercises_Click" >
-                <TextBlock  FontSize="36" FontWeight="Bold" FontFamily="Segoe Script">Упражнения</TextBlock>
-            </Button>
-
-
-            <Button Height="110" Background="#FFFF872F">
-                <TextBlock FontSize="36" FontWeight="Bold" FontFamily="Segoe Script">Тренировки</TextBlock>
-            </Button>
-
-            <Button Height="110" Background="#FFFF872F">
-                <TextBlock FontSize="36" FontWeight="Bold" FontFamily="Segoe Script">Блокнот</TextBlock>
-            </Button>
-
-            <Button Height="110" Background="#FFFF872F">
-                <TextBlock FontSize="36" FontWeight="Bold" FontFamily="Segoe Script">Вес/калории</TextBlock>
-            </Button>
 
 
 
-            <Border Height="90"></Border>
-        </StackPanel>
 
-        <StackPanel Grid.Column="1" Height="60" VerticalAlignment="Top" Background="#FFFF872F"></StackPanel>
+
 
 
         <Frame x:Name="MainFrame"></Frame>
     </Grid>
+
 
 </Window>

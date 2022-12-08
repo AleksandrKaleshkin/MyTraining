@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,24 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MyTraining
 {
     /// <summary>
-    /// Логика взаимодействия для ExercisesWindow.xaml
+    /// Логика взаимодействия для WorkoutPage.xaml
     /// </summary>
-    public partial class ExercisesWindow : Window
+    public partial class WorkoutPage : Page
     {
-        public ExercisesWindow()
+        public WorkoutPage()
         {
             InitializeComponent();
-            MainFrame.Content = new ExercisesPage();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new ExercisesPage();
         }
     }
 }
